@@ -1,0 +1,31 @@
+﻿// 対象：
+// pid制御などでdtを使いたい人
+// 妙な変数で汚したくない人
+
+
+
+#include <M5Stack.h>
+
+// 前回フレーム-現在フレーム間の経過時間dtをmicroオーダーで返す関数
+float getMicroDt() {
+  static int pre = 0; // staticがミソ
+  float dt = (float)(micros() - pre) / 1000000.0;
+  pre = micros();
+  return dt;
+}
+
+void setup() {
+  Serial.begin(115200);
+
+  // getMicroDt()を初回に一回呼んでおくことで、初回の長いdtをloopに持っていかなくて済む
+  getMicroDt();
+}
+
+void loop() {
+  for (int i = 0; i < 10; i++) {
+    Serial.print(i);
+    Serial.print(" : ");
+    Serial.println(getMicroDt(), 8);
+  }
+  delay(1000);
+}
