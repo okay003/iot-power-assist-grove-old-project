@@ -13,6 +13,6 @@
 
 https://user-images.githubusercontent.com/74394828/134185138-801bac78-8cb6-4872-91b1-6b2e93fc5620.mp4
 
-装着した様子
+装着した様子  
 ![image 1](https://user-images.githubusercontent.com/74394828/134185204-8cc94b31-bb35-447a-b8ef-2e2e6838cf7d.jpg)
 ![image 2](https://user-images.githubusercontent.com/74394828/134185211-04306377-b72f-42ec-9794-3d618c1073e5.jpg)
